@@ -11,6 +11,7 @@ public class UIimageAppear : MonoBehaviour
 	
 	void Start()
 	{
+		image_name.enabled = false;
 		yesButton.gameObject.SetActive(false);
 		noButton.gameObject.SetActive(false);
 	}
