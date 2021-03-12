@@ -105,6 +105,7 @@ namespace Console
             EditorCommand editorCommand = new EditorCommand(virtualOS);
             StopCommand stopCommand = new StopCommand();
             DisableKeyCommand disableKeyCommand= new DisableKeyCommand();
+			PhishingCommand phishingCommand = new PhishingCommand();
   
         }
 

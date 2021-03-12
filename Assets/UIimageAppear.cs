@@ -5,32 +5,33 @@ using UnityEngine.UI;
 
 public class UIimageAppear : MonoBehaviour
 {
-    [SerializeField] private Image image_name;
-	public Button yesButton;
-	public Button noButton;
+    public GameObject image_name;
+	
 	
 	void Start()
 	{
-		image_name.enabled = false;
-		yesButton.gameObject.SetActive(false);
-		noButton.gameObject.SetActive(false);
+		image_name.gameObject.SetActive(false);
+		
 	}
 	
 	void OnTriggerEnter(Collider other)
 	{
+		
+		image_name.gameObject.SetActive(true);
+		
 		if(other.CompareTag("Player"))
 		{
-			image_name.enabled = true;
-			yesButton.gameObject.SetActive(true);
-			noButton.gameObject.SetActive(true);
+			image_name.gameObject.SetActive(true);
 		}
 	}
 	
 	void OnTriggerExit(Collider other)
 	{
+		image_name.gameObject.SetActive(false);
+		
 		if(other.CompareTag("Player"))
 		{
-			image_name.enabled = false;
+			//image_name.gameObject.SetActive(false);
 		}
 	}
 }
