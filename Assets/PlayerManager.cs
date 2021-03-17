@@ -126,7 +126,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks
             SetPopUpText("");
         if (buildIndex == 2)
         {
-            SetPopUpText("Your movement keys have been disabled! Get to the end of the maze using console commands");
+            //SetPopUpText("Your movement keys have been disabled! Get to the end of the maze using console commands");
             // TODO: Ideally we would un-set this after a certain period of time
         }
     }
