@@ -104,6 +104,7 @@ namespace Console
             ListCommand listCommand = new ListCommand(Commands);
             EditorCommand editorCommand = new EditorCommand(virtualOS);
             StopCommand stopCommand = new StopCommand();
+            EndLevelCommand endLevelCommand = new EndLevelCommand();
             DisableKeyCommand disableKeyCommand= new DisableKeyCommand();
 			PhishingCommand phishingCommand = new PhishingCommand();
   
