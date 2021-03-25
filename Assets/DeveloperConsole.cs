@@ -107,6 +107,7 @@ namespace Console
             EndLevelCommand endLevelCommand = new EndLevelCommand();
             DisableKeyCommand disableKeyCommand= new DisableKeyCommand();
 			PhishingCommand phishingCommand = new PhishingCommand();
+			BackstoryCommand backstoryCommand = new BackstoryCommand();
   
         }
 
