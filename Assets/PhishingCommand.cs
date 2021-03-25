@@ -25,7 +25,7 @@ namespace Console
             Command = "phishing";
             Description = "Collects the answer if an email is phishing or not";
             Help = "Usage: phishing {email number}_{real/fake}"; //fake if email is phishing, real if email is not phishing
-            ArgLength = 1;
+            ArgLength = 2;
             playerMovement = DeveloperConsole.Instance.player.GetComponent<PlayerMovement>();
             AddCommandToConsole();
         }
@@ -34,121 +34,137 @@ namespace Console
         {
 
             string email_num = input[1]; //which email is being selected
+			string phishing_state = input[2];
 			
-			if(email_num == "1_real") //Phishing_text_popup incorrect
+			if(email_num == "1")
 			{
-				DeveloperConsole.AddStaticMessageToConsole("That is incorrect");
-				DeveloperConsole.AddStaticMessageToConsole("This text message may be phishing because it was sent to multiple numbers, none of which you recognize");
-			}
-			else if(email_num == "1_fake") //Phishing_text_popup correct
-			{
-				if (set.Contains(1))
+				if(phishing_state == "real") //Phishing_text_popup incorrect
 				{
-					DeveloperConsole.AddStaticMessageToConsole("You've already completed this task");
-				}
-				else
-				{
-					DeveloperConsole.AddStaticMessageToConsole("That is correct");
+					DeveloperConsole.AddStaticMessageToConsole("That is incorrect");
 					DeveloperConsole.AddStaticMessageToConsole("This text message may be phishing because it was sent to multiple numbers, none of which you recognize");
-					set.Add(1);
-					email_count++;
-					if (email_count == 5)
-                    {
-						DeveloperConsole.AddStaticMessageToConsole("You have completed this scenario, type \"endlevel\" in the console to return to the town");
+				}
+				else if(phishing_state == "fake") //Phishing_text_popup correct
+				{
+					if (set.Contains(1))
+					{
+						DeveloperConsole.AddStaticMessageToConsole("You've already completed this task");
+					}
+					else
+					{
+						DeveloperConsole.AddStaticMessageToConsole("That is correct");
+						DeveloperConsole.AddStaticMessageToConsole("This text message may be phishing because it was sent to multiple numbers, none of which you recognize");
+						set.Add(1);
+						email_count++;
+						if (email_count == 5)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("You have completed this scenario, type \"endlevel\" in the console to return to the town");
+						}
 					}
 				}
 			}
-			else if(email_num == "2_real") //Phishing_goggle_signup_popup incorrect
+			else if (email_num == "2")
 			{
-				DeveloperConsole.AddStaticMessageToConsole("That is incorrect");
-				DeveloperConsole.AddStaticMessageToConsole("This may be phishing because the URL at the top of the page does not match what the Goggle signin page should be");
-			}
-			else if(email_num == "2_fake") //Phishing_goggle_signup_popup correct
-			{
-				if (set.Contains(2))
+				if(phishing_state == "real") //Phishing_goggle_signup_popup incorrect
 				{
-					DeveloperConsole.AddStaticMessageToConsole("You've already completed this task");
-				}
-				else
-				{
-					DeveloperConsole.AddStaticMessageToConsole("That is correct");
+					DeveloperConsole.AddStaticMessageToConsole("That is incorrect");
 					DeveloperConsole.AddStaticMessageToConsole("This may be phishing because the URL at the top of the page does not match what the Goggle signin page should be");
-					set.Add(2);
-					email_count++;
-					if (email_count == 5)
+				}
+				else if(phishing_state == "fake") //Phishing_goggle_signup_popup correct
+				{
+					if (set.Contains(2))
 					{
-						DeveloperConsole.AddStaticMessageToConsole("You have completed this scenario, type \"endlevel\" in the console to return to the town");
+						DeveloperConsole.AddStaticMessageToConsole("You've already completed this task");
+					}
+					else
+					{
+						DeveloperConsole.AddStaticMessageToConsole("That is correct");
+						DeveloperConsole.AddStaticMessageToConsole("This may be phishing because the URL at the top of the page does not match what the Goggle signin page should be");
+						set.Add(2);
+						email_count++;
+						if (email_count == 5)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("You have completed this scenario, type \"endlevel\" in the console to return to the town");
+						}
 					}
 				}
 			}
-			else if(email_num == "3_real") //New Video Game incorrect
+			else if(email_num == "3")
 			{
-				DeveloperConsole.AddStaticMessageToConsole("That is incorrect");
-				DeveloperConsole.AddStaticMessageToConsole("This may be phishing because the email address at the top does not match the email address in the sign off");
-			}
-			else if(email_num == "3_fake") //New Video Game correct
-			{
-				if (set.Contains(3))
+				if(phishing_state == "real") //New Video Game incorrect
 				{
-					DeveloperConsole.AddStaticMessageToConsole("You've already completed this task");
-				}
-				else
-				{
-					DeveloperConsole.AddStaticMessageToConsole("That is correct");
+					DeveloperConsole.AddStaticMessageToConsole("That is incorrect");
 					DeveloperConsole.AddStaticMessageToConsole("This may be phishing because the email address at the top does not match the email address in the sign off");
-					set.Add(3);
-					email_count++;
-					if (email_count == 5)
+				}
+				else if(phishing_state == "fake") //New Video Game correct
+				{
+					if (set.Contains(3))
 					{
-						DeveloperConsole.AddStaticMessageToConsole("You have completed this scenario, type \"endlevel\" in the console to return to the town");
+						DeveloperConsole.AddStaticMessageToConsole("You've already completed this task");
+					}
+					else
+					{
+						DeveloperConsole.AddStaticMessageToConsole("That is correct");
+						DeveloperConsole.AddStaticMessageToConsole("This may be phishing because the email address at the top does not match the email address in the sign off");
+						set.Add(3);
+						email_count++;
+						if (email_count == 5)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("You have completed this scenario, type \"endlevel\" in the console to return to the town");
+						}
 					}
 				}
 			}
-			else if(email_num == "4_real") //Highschool password reset correct
+			else if(email_num == "4")
 			{
-				if (set.Contains(4))
+				if(phishing_state == "real") //Highschool password reset correct
 				{
-					DeveloperConsole.AddStaticMessageToConsole("You've already completed this task");
+					if (set.Contains(4))
+					{
+						DeveloperConsole.AddStaticMessageToConsole("You've already completed this task");
+					}
+					else
+					{
+						DeveloperConsole.AddStaticMessageToConsole("That is correct");
+						DeveloperConsole.AddStaticMessageToConsole("This is real because you requested that your password be reset");
+						set.Add(4);
+						email_count++;
+						if (email_count == 5)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("You have completed this scenario, type \"endlevel\" in the console to return to the town");
+						}
+					}
 				}
-				else
+				else if (phishing_state == "fake") //Highschool password reset incorrect
 				{
-					DeveloperConsole.AddStaticMessageToConsole("That is correct");
+					DeveloperConsole.AddStaticMessageToConsole("That is incorrect");
 					DeveloperConsole.AddStaticMessageToConsole("This is real because you requested that your password be reset");
-					set.Add(4);
-					email_count++;
-					if (email_count == 5)
+				}
+			}
+			else if(email_num == "5")
+			{
+				if(phishing_state == "real") //University correct
+				{
+					if (set.Contains(5))
 					{
-						DeveloperConsole.AddStaticMessageToConsole("You have completed this scenario, type \"endlevel\" in the console to return to the town");
+						DeveloperConsole.AddStaticMessageToConsole("You've already completed this task");
+					}
+					else
+					{
+						DeveloperConsole.AddStaticMessageToConsole("That is correct");
+						DeveloperConsole.AddStaticMessageToConsole("This is real because you applied to Miskatonic University and have been awaiting a response email");
+						set.Add(5);
+						email_count++;
+						if (email_count == 5)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("You have completed this scenario, type \"endlevel\" in the console to return to the town");
+						}
 					}
 				}
-			}
-			else if (email_num == "4_fake") //Highschool password reset incorrect
-			{
-				DeveloperConsole.AddStaticMessageToConsole("That is incorrect");
-				DeveloperConsole.AddStaticMessageToConsole("This is real because you requested that your password be reset");
-			}
-			else if(email_num == "5_real") //University correct
-			{
-				if (set.Contains(5))
+				else if (phishing_state == "fake") //University incorrect
 				{
-					DeveloperConsole.AddStaticMessageToConsole("You've already completed this task");
-				}
-				else
-				{
-					DeveloperConsole.AddStaticMessageToConsole("That is correct");
+					DeveloperConsole.AddStaticMessageToConsole("That is incorrect");
 					DeveloperConsole.AddStaticMessageToConsole("This is real because you applied to Miskatonic University and have been awaiting a response email");
-					set.Add(5);
-					email_count++;
-					if (email_count == 5)
-					{
-						DeveloperConsole.AddStaticMessageToConsole("You have completed this scenario, type \"endlevel\" in the console to return to the town");
-					}
 				}
-			}
-			else if (email_num == "5_fake") //University incorrect
-			{
-				DeveloperConsole.AddStaticMessageToConsole("That is incorrect");
-				DeveloperConsole.AddStaticMessageToConsole("This is real because you applied to Miskatonic University and have been awaiting a response email");
 			}
 			else
 			{

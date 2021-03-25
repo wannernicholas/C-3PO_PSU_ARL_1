@@ -6304,7 +6304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textToDisplay: Type "backstory 3" To read the Backstory, And then Type "phishing
-    3_real" or "phishing 3_fake" to determine if this is phishing or not
+    3 real" or "phishing 3 fake" to determine if this is phishing or not
   objectToAccess: {fileID: 1351140309}
 --- !u!65 &697669205
 BoxCollider:
@@ -8768,7 +8768,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textToDisplay: Type "backstory 1" To read the Backstory, And then Type "phishing
-    1_real" or "phishing 1_fake"  to determine if this is phishing or not
+    1 real" or "phishing 1 fake"  to determine if this is phishing or not
   objectToAccess: {fileID: 1351140309}
 --- !u!65 &990544127
 BoxCollider:
@@ -9767,7 +9767,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textToDisplay: Type "backstory 2" To read the Backstory, And then Type "phishing
-    2_real" or "phishing 2_fake" to determine if this is phishing or not
+    2 real" or "phishing 2 fake" to determine if this is phishing or not
   objectToAccess: {fileID: 1351140309}
 --- !u!65 &1073344820
 BoxCollider:
@@ -10009,7 +10009,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textToDisplay: Type "backstory 5" To read the Backstory, And then Type "phishing
-    5_real" or "phishing 5_fake"to determine if this is phishing or not
+    5 real" or "phishing 5 fake"to determine if this is phishing or not
   objectToAccess: {fileID: 1351140309}
 --- !u!65 &1094855988
 BoxCollider:
@@ -12083,7 +12083,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textToDisplay: Type "backstory 2" To read the Backstory, And then Type "phishing
-    2_real" or "phishing 2_fake" to determine if this is phishing or not
+    2 real" or "phishing 2 fake" to determine if this is phishing or not
   objectToAccess: {fileID: 1351140309}
 --- !u!65 &1351698931
 BoxCollider:
@@ -12568,7 +12568,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textToDisplay: Type "backstory 4" To read the Backstory, And then Type "phishing
-    4_real" or "phishing 4_fake" to determine if this is phishing or not
+    4 real" or "phishing 4 fake" to determine if this is phishing or not
   objectToAccess: {fileID: 1351140309}
 --- !u!65 &1438973283
 BoxCollider:
@@ -14046,7 +14046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textToDisplay: Type "backstory 3" To read the Backstory, And then Type "phishing
-    3_real" or "phishing 3_fake" to determine if this is phishing or not
+    3 real" or "phishing 3 fake" to determine if this is phishing or not
   objectToAccess: {fileID: 1351140309}
 --- !u!65 &1550668805
 BoxCollider:
