@@ -119,7 +119,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks
         if (buildIndex == 1)
             SetKeyControls(false);
         else if (buildIndex == 2)
-            SetKeyControls(true);
+            SetKeyControls(false);
         
         // What pop up message should we show
         if (buildIndex == 1)
