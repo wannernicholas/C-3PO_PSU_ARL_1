@@ -108,6 +108,8 @@ namespace Console
             DisableKeyCommand disableKeyCommand= new DisableKeyCommand();
 			PhishingCommand phishingCommand = new PhishingCommand();
 			BackstoryCommand backstoryCommand = new BackstoryCommand();
+			PickupCommand pickupCommand = new PickupCommand();
+			DropoffCommand dropoffCommand = new DropoffCommand();
   
         }
 
