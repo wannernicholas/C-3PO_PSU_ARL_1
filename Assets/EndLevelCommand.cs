@@ -25,7 +25,7 @@ namespace Console
 
         public override int RunCommand(string[] input)
         {
-            if (PhishingCommand.email_count == 5)
+            if ((PhishingCommand.email_count == 5) || (DropoffCommand.item1_done && DropoffCommand.item2_done && DropoffCommand.item3_done && DropoffCommand.item4_done))
             {
                 SceneManager.LoadScene(1);
                 return -1;
