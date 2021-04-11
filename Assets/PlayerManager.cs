@@ -5,7 +5,6 @@ using Photon.Pun;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-
 public class PlayerManager : MonoBehaviourPunCallbacks
 {
 
@@ -147,7 +146,11 @@ public class PlayerManager : MonoBehaviourPunCallbacks
     // Update is called once per frame
     void Update()
     {
-        if(player == null)
+        var playerStart = FindObjectOfType<PlayerStart>();
+        if (player.transform.position.y < -5)
+            player.transform.position = playerStart.transform.position;
+
+        if (player == null)
             return;
 
         if(Input.GetKey(KeyCode.Q))
