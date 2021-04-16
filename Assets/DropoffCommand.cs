@@ -15,6 +15,8 @@ namespace Console
         public override int ArgLength { get; protected set; }
         public PlayerMovement playerMovement;
 		ISet<int> set = new HashSet<int>();
+		
+		private GameObject player;
 
 		public GameObject dropoffParent;
 		public GameObject item1;
@@ -46,6 +48,8 @@ namespace Console
 			
 			item1_done = item2_done = item3_done = item4_done = false;
 			
+			player = DeveloperConsole.Instance.player;
+			
 		}
 		
 		 public override int RunCommand(string[] input)
@@ -56,58 +60,90 @@ namespace Console
 			{
 				if(PickupCommand.active_item == 1)
 				{
-					PickupCommand.active_item = 0;
-					item1.gameObject.SetActive(true);
-					item1_done = true;
-					
-					DeveloperConsole.AddStaticMessageToConsole("This strengthens your password by adding a lowercase and an uppercase letter");
-					
-					if(item1_done && item2_done && item3_done && item4_done)
+					if((player.transform.position.x < 15) && (player.transform.position.x > -14) && (player.transform.position.z < 10) && (player.transform.position.z > -8))
 					{
-						DeveloperConsole.AddStaticMessageToConsole("Your password is now longer than 8 characters, making it safer");
-						DeveloperConsole.AddStaticMessageToConsole("You have completed this scenario, type \"endlevel\" in the console to return to the town");
+						PickupCommand.active_item = 0;
+						item1.gameObject.SetActive(true);
+						item1_done = true;
+					
+						DeveloperConsole.AddStaticMessageToConsole("This strengthens your password by adding a lowercase and an uppercase letter");
+					
+						if(item1_done && item2_done && item3_done && item4_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password is now longer than 8 characters, making it safer");
+							DeveloperConsole.AddStaticMessageToConsole("You have completed this scenario, type \"endlevel\" in the console to return to the town");
+						}
+						
+					}
+					else
+					{
+						DeveloperConsole.AddStaticMessageToConsole("You are not close enough to the dropoff zone");
 					}
 				}
 				else if(PickupCommand.active_item == 2)
 				{
-					PickupCommand.active_item = 0;
-					item2.gameObject.SetActive(true);
-					item2_done = true;
-					
-					DeveloperConsole.AddStaticMessageToConsole("This strengthens your password by adding an uppercase letter and a special character");
-					
-					if(item1_done && item2_done && item3_done && item4_done)
+					if((player.transform.position.x < 15) && (player.transform.position.x > -14) && (player.transform.position.z < 10) && (player.transform.position.z > -8))
 					{
-						DeveloperConsole.AddStaticMessageToConsole("Your password is now longer than 8 characters, making it safer");
-						DeveloperConsole.AddStaticMessageToConsole("You have completed this scenario, type \"endlevel\" in the console to return to the town");
+						PickupCommand.active_item = 0;
+						item2.gameObject.SetActive(true);
+						item2_done = true;
+					
+						DeveloperConsole.AddStaticMessageToConsole("This strengthens your password by adding an uppercase letter and a special character");
+					
+						if(item1_done && item2_done && item3_done && item4_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password is now longer than 8 characters, making it safer");
+							DeveloperConsole.AddStaticMessageToConsole("You have completed this scenario, type \"endlevel\" in the console to return to the town");
+						}
+					
+					}
+					else
+					{
+						DeveloperConsole.AddStaticMessageToConsole("You are not close enough to the dropoff zone");
 					}
 				}
 				else if(PickupCommand.active_item == 3)
 				{
-					PickupCommand.active_item = 0;
-					item3.gameObject.SetActive(true);
-					item3_done = true;
-					
-					DeveloperConsole.AddStaticMessageToConsole("This strengthens your password by adding a number and two uppercase letters");
-					
-					if(item1_done && item2_done && item3_done && item4_done)
+					if((player.transform.position.x < 15) && (player.transform.position.x > -14) && (player.transform.position.z < 10) && (player.transform.position.z > -8))
 					{
-						DeveloperConsole.AddStaticMessageToConsole("Your password is now longer than 8 characters, making it safer");
-						DeveloperConsole.AddStaticMessageToConsole("You have completed this scenario, type \"endlevel\" in the console to return to the town");
+						PickupCommand.active_item = 0;
+						item3.gameObject.SetActive(true);
+						item3_done = true;
+					
+						DeveloperConsole.AddStaticMessageToConsole("This strengthens your password by adding a number and two uppercase letters");
+					
+						if(item1_done && item2_done && item3_done && item4_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password is now longer than 8 characters, making it safer");
+							DeveloperConsole.AddStaticMessageToConsole("You have completed this scenario, type \"endlevel\" in the console to return to the town");
+						}
+						
+					}
+					else
+					{
+						DeveloperConsole.AddStaticMessageToConsole("You are not close enough to the dropoff zone");
 					}
 				}
 				else if(PickupCommand.active_item == 4)
 				{
-					PickupCommand.active_item = 0;
-					item4.gameObject.SetActive(true);
-					item4_done = true;
-					
-					DeveloperConsole.AddStaticMessageToConsole("This strengthens your password by adding a lowercase and an uppercase letter");
-					
-					if(item1_done && item2_done && item3_done && item4_done)
+					if((player.transform.position.x < 15) && (player.transform.position.x > -14) && (player.transform.position.z < 10) && (player.transform.position.z > -8))
 					{
-						DeveloperConsole.AddStaticMessageToConsole("Your password is now longer than 8 characters, making it safer");
-						DeveloperConsole.AddStaticMessageToConsole("You have completed this scenario, type \"endlevel\" in the console to return to the town");
+						PickupCommand.active_item = 0;
+						item4.gameObject.SetActive(true);
+						item4_done = true;
+					
+						DeveloperConsole.AddStaticMessageToConsole("This strengthens your password by adding a lowercase and an uppercase letter");
+					
+						if(item1_done && item2_done && item3_done && item4_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password is now longer than 8 characters, making it safer");
+							DeveloperConsole.AddStaticMessageToConsole("You have completed this scenario, type \"endlevel\" in the console to return to the town");
+						}
+						
+					}
+					else
+					{
+						DeveloperConsole.AddStaticMessageToConsole("You are not close enough to the dropoff zone");
 					}
 					
 				}
