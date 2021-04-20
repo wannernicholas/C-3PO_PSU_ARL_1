@@ -5,7 +5,7 @@ using System.Collections;
 public class sliding : MonoBehaviour
 {
     public Vector3 pointB;
-
+    public float rate;
     IEnumerator Start()
     {
         Vector3 pointA = transform.position;
@@ -19,7 +19,7 @@ public class sliding : MonoBehaviour
     IEnumerator MoveObject(Transform thisTransform, Vector3 startPos, Vector3 endPos, float time)
     {
         float i = 0.0f;
-        float rate = 1.0f / time;
+        rate = rate / time;
         while (i < 1.0f)
         {
             i += Time.deltaTime * rate;
