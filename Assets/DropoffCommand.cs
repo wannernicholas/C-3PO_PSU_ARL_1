@@ -66,12 +66,66 @@ namespace Console
 						item1.gameObject.SetActive(true);
 						item1_done = true;
 					
-						DeveloperConsole.AddStaticMessageToConsole("This strengthens your password by adding a lowercase and an uppercase letter");
-					
 						if(item1_done && item2_done && item3_done && item4_done)
 						{
-							DeveloperConsole.AddStaticMessageToConsole("Your password is now longer than 8 characters, making it safer");
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase, lowercase letters, numbers, and a special character comprised of 9 characters. A computer would crack this password in 12 years! This is considered a safe password");
 							DeveloperConsole.AddStaticMessageToConsole("You have completed this scenario, type \"endlevel\" in the console to return to the town");
+						}
+						else if(item1_done && item2_done && item3_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase, lowercase letters, numbers, and a special character comprised of 7 characters. A computer would crack this password in 17 hours");
+						}
+						else if(item1_done && item2_done && item4_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase, lowercase letters, numbers, and a special character comprised of 6 characters. A computer would crack this password in 13 minutes");
+						}
+						else if(item1_done && item3_done && item4_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase, lowercase letters, and numbers comprised of 7 characters. A computer would crack this password in 3 hours");
+						}
+						else if(item2_done && item3_done && item4_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase, lowercase letters, numbers, and a special character comprised of 7 characters. A computer would crack this password in 17 hours");
+						}
+						else if(item1_done && item2_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase and lowercase letters and a special character comprised of 4 characters. A computer would crack this password instantly");
+						}
+						else if(item1_done && item3_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains a mix of uppercase, lowercase letters, and numbers comprised of 5 characters. A computer would crack this password in 3 seconds");
+						}
+						else if(item1_done && item4_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase and lowercase letters comprised of 4 characters. A computer would crack this password instantly");
+						}
+						else if(item2_done && item3_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains a mix of uppercase letters, numbers, and a special character comprised of 5 characters. A computer would crack this password in 10 seconds");
+						}
+						else if(item2_done && item4_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains a mix of uppercase, lowercase letters, numbers, and a special character comprised of 4 characters. A computer would crack this password instantly");
+						}
+						else if(item3_done && item4_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains a mix of uppercase, lowercase letters, and numbers comprised of 5 characters. A computer would crack this password in 3 seconds");
+						}
+						else if(item1_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase and lowercase letters comprised of 2 characters. A computer would crack this password instantly");
+						}
+						else if(item2_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains an uppercase letter and a special character comprised of 2 characters. A computer would crack this password instantly");
+						}
+						else if(item3_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains a mix of uppercase letters and numbers comprised of 3 characters. A computer would crack this password instantly");
+						}
+						else if(item4_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase and lowercase letters comprised of 2 characters. A computer would crack this password instantly");
 						}
 						
 					}
@@ -88,12 +142,66 @@ namespace Console
 						item2.gameObject.SetActive(true);
 						item2_done = true;
 					
-						DeveloperConsole.AddStaticMessageToConsole("This strengthens your password by adding an uppercase letter and a special character");
-					
 						if(item1_done && item2_done && item3_done && item4_done)
 						{
-							DeveloperConsole.AddStaticMessageToConsole("Your password is now longer than 8 characters, making it safer");
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase, lowercase letters, numbers, and a special character comprised of 9 characters. A computer would crack this password in 12 years! This is considered a safe password");
 							DeveloperConsole.AddStaticMessageToConsole("You have completed this scenario, type \"endlevel\" in the console to return to the town");
+						}
+						else if(item1_done && item2_done && item3_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase, lowercase letters, numbers, and a special character comprised of 7 characters. A computer would crack this password in 17 hours");
+						}
+						else if(item1_done && item2_done && item4_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase, lowercase letters, numbers, and a special character comprised of 6 characters. A computer would crack this password in 13 minutes");
+						}
+						else if(item1_done && item3_done && item4_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase, lowercase letters, and numbers comprised of 7 characters. A computer would crack this password in 3 hours");
+						}
+						else if(item2_done && item3_done && item4_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase, lowercase letters, numbers, and a special character comprised of 7 characters. A computer would crack this password in 17 hours");
+						}
+						else if(item1_done && item2_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase and lowercase letters and a special character comprised of 4 characters. A computer would crack this password instantly");
+						}
+						else if(item1_done && item3_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains a mix of uppercase, lowercase letters, and numbers comprised of 5 characters. A computer would crack this password in 3 seconds");
+						}
+						else if(item1_done && item4_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase and lowercase letters comprised of 4 characters. A computer would crack this password instantly");
+						}
+						else if(item2_done && item3_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains a mix of uppercase letters, numbers, and a special character comprised of 5 characters. A computer would crack this password in 10 seconds");
+						}
+						else if(item2_done && item4_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains a mix of uppercase, lowercase letters, numbers, and a special character comprised of 4 characters. A computer would crack this password instantly");
+						}
+						else if(item3_done && item4_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains a mix of uppercase, lowercase letters, and numbers comprised of 5 characters. A computer would crack this password in 3 seconds");
+						}
+						else if(item1_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase and lowercase letters comprised of 2 characters. A computer would crack this password instantly");
+						}
+						else if(item2_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains an uppercase letter and a special character comprised of 2 characters. A computer would crack this password instantly");
+						}
+						else if(item3_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains a mix of uppercase letters and numbers comprised of 3 characters. A computer would crack this password instantly");
+						}
+						else if(item4_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase and lowercase letters comprised of 2 characters. A computer would crack this password instantly");
 						}
 					
 					}
@@ -110,12 +218,66 @@ namespace Console
 						item3.gameObject.SetActive(true);
 						item3_done = true;
 					
-						DeveloperConsole.AddStaticMessageToConsole("This strengthens your password by adding a number and two uppercase letters");
-					
 						if(item1_done && item2_done && item3_done && item4_done)
 						{
-							DeveloperConsole.AddStaticMessageToConsole("Your password is now longer than 8 characters, making it safer");
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase, lowercase letters, numbers, and a special character comprised of 9 characters. A computer would crack this password in 12 years! This is considered a safe password");
 							DeveloperConsole.AddStaticMessageToConsole("You have completed this scenario, type \"endlevel\" in the console to return to the town");
+						}
+						else if(item1_done && item2_done && item3_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase, lowercase letters, numbers, and a special character comprised of 7 characters. A computer would crack this password in 17 hours");
+						}
+						else if(item1_done && item2_done && item4_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase, lowercase letters, numbers, and a special character comprised of 6 characters. A computer would crack this password in 13 minutes");
+						}
+						else if(item1_done && item3_done && item4_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase, lowercase letters, and numbers comprised of 7 characters. A computer would crack this password in 3 hours");
+						}
+						else if(item2_done && item3_done && item4_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase, lowercase letters, numbers, and a special character comprised of 7 characters. A computer would crack this password in 17 hours");
+						}
+						else if(item1_done && item2_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase and lowercase letters and a special character comprised of 4 characters. A computer would crack this password instantly");
+						}
+						else if(item1_done && item3_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains a mix of uppercase, lowercase letters, and numbers comprised of 5 characters. A computer would crack this password in 3 seconds");
+						}
+						else if(item1_done && item4_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase and lowercase letters comprised of 4 characters. A computer would crack this password instantly");
+						}
+						else if(item2_done && item3_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains a mix of uppercase letters, numbers, and a special character comprised of 5 characters. A computer would crack this password in 10 seconds");
+						}
+						else if(item2_done && item4_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains a mix of uppercase, lowercase letters, numbers, and a special character comprised of 4 characters. A computer would crack this password instantly");
+						}
+						else if(item3_done && item4_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains a mix of uppercase, lowercase letters, and numbers comprised of 5 characters. A computer would crack this password in 3 seconds");
+						}
+						else if(item1_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase and lowercase letters comprised of 2 characters. A computer would crack this password instantly");
+						}
+						else if(item2_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains an uppercase letter and a special character comprised of 2 characters. A computer would crack this password instantly");
+						}
+						else if(item3_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains a mix of uppercase letters and numbers comprised of 3 characters. A computer would crack this password instantly");
+						}
+						else if(item4_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase and lowercase letters comprised of 2 characters. A computer would crack this password instantly");
 						}
 						
 					}
@@ -132,12 +294,66 @@ namespace Console
 						item4.gameObject.SetActive(true);
 						item4_done = true;
 					
-						DeveloperConsole.AddStaticMessageToConsole("This strengthens your password by adding a lowercase and an uppercase letter");
-					
 						if(item1_done && item2_done && item3_done && item4_done)
 						{
-							DeveloperConsole.AddStaticMessageToConsole("Your password is now longer than 8 characters, making it safer");
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase, lowercase letters, numbers, and a special character comprised of 9 characters. A computer would crack this password in 12 years! This is considered a safe password");
 							DeveloperConsole.AddStaticMessageToConsole("You have completed this scenario, type \"endlevel\" in the console to return to the town");
+						}
+						else if(item1_done && item2_done && item3_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase, lowercase letters, numbers, and a special character comprised of 7 characters. A computer would crack this password in 17 hours");
+						}
+						else if(item1_done && item2_done && item4_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase, lowercase letters, numbers, and a special character comprised of 6 characters. A computer would crack this password in 13 minutes");
+						}
+						else if(item1_done && item3_done && item4_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase, lowercase letters, and numbers comprised of 7 characters. A computer would crack this password in 3 hours");
+						}
+						else if(item2_done && item3_done && item4_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase, lowercase letters, numbers, and a special character comprised of 7 characters. A computer would crack this password in 17 hours");
+						}
+						else if(item1_done && item2_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase and lowercase letters and a special character comprised of 4 characters. A computer would crack this password instantly");
+						}
+						else if(item1_done && item3_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains a mix of uppercase, lowercase letters, and numbers comprised of 5 characters. A computer would crack this password in 3 seconds");
+						}
+						else if(item1_done && item4_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase and lowercase letters comprised of 4 characters. A computer would crack this password instantly");
+						}
+						else if(item2_done && item3_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains a mix of uppercase letters, numbers, and a special character comprised of 5 characters. A computer would crack this password in 10 seconds");
+						}
+						else if(item2_done && item4_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains a mix of uppercase, lowercase letters, numbers, and a special character comprised of 4 characters. A computer would crack this password instantly");
+						}
+						else if(item3_done && item4_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains a mix of uppercase, lowercase letters, and numbers comprised of 5 characters. A computer would crack this password in 3 seconds");
+						}
+						else if(item1_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase and lowercase letters comprised of 2 characters. A computer would crack this password instantly");
+						}
+						else if(item2_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains an uppercase letter and a special character comprised of 2 characters. A computer would crack this password instantly");
+						}
+						else if(item3_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains a mix of uppercase letters and numbers comprised of 3 characters. A computer would crack this password instantly");
+						}
+						else if(item4_done)
+						{
+							DeveloperConsole.AddStaticMessageToConsole("Your password now contains uppercase and lowercase letters comprised of 2 characters. A computer would crack this password instantly");
 						}
 						
 					}

@@ -87,7 +87,7 @@ namespace Console
 			}
 			else if(item_name == "3PO" || item_name == "3P0")//item3
 			{
-				if((player.transform.position.x < 33) && (player.transform.position.x > 24) && (player.transform.position.z < 114) && (player.transform.position.z > 105))
+				if((player.transform.position.x < 33) && (player.transform.position.x > 24) && (player.transform.position.z < 103) && (player.transform.position.z > 94))
 				{
 					if(DropoffCommand.item3_done)
 					{
