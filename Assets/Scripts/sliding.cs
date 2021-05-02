@@ -19,7 +19,7 @@ public class sliding : MonoBehaviour
     IEnumerator MoveObject(Transform thisTransform, Vector3 startPos, Vector3 endPos, float time)
     {
         float i = 0.0f;
-        rate = rate / time;
+        //rate = rate / time;
         while (i < 1.0f)
         {
             i += Time.deltaTime * rate;
