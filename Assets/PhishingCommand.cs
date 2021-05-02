@@ -24,7 +24,7 @@ namespace Console
             Name = "Phishing";
             Command = "phishing";
             Description = "Collects the answer if an email is phishing or not";
-            Help = "Usage: phishing {email number}_{real/fake}"; //fake if email is phishing, real if email is not phishing
+            Help = "Usage: phishing {email number} {real/fake}"; //fake if email is phishing, real if email is not phishing
             ArgLength = 2;
             playerMovement = DeveloperConsole.Instance.player.GetComponent<PlayerMovement>();
             AddCommandToConsole();
